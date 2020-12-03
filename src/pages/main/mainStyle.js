@@ -41,4 +41,31 @@ const StyledMain = styled.div`
   }
 `
 
-export default StyledMain 
+export const Navigation = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    border:0px;
+    background: #da552f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:disabled,
+    &:disabled:hover {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+` 
+
+export default  StyledMain
